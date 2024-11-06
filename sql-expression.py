@@ -26,8 +26,8 @@ album_table = Table(
 # create variable for "Track" table
 track_table = Table(
     "Track", meta,
-    Column("TrackID", Integer, primary_key=True),
-    Column("Name", String, ),
+    Column("TrackId", Integer, primary_key=True),
+    Column("Name", String),
     Column("AlbumId", Integer, ForeignKey("album_table.AlbumId")),
     Column("MeadiaTypeId", Integer, primary_key=False),
     Column("GenreId", Integer, primary_key=False),
